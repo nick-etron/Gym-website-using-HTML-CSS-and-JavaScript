@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,700;1,600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Exo", sans-serif;
+}
+/* landing-page */
+.main-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./images/bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 15vh;
+}
+.nav-icon {
+  height: 65px;
+  margin-left: 20px;
+}
+.nav-list {
+  height: 65px;
+  margin-top: 30px;
+}
+ul {
+  display: flex;
+  justify-content: end;
+  list-style: none;
+}
+li {
+  margin-right: 30px;
+}
+li > a {
+  text-decoration: none;
+  color: #dbff00;
+  font-size: 14px;
+}
+.main {
+  display: flex;
+  height: 90vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+.message {
+  height: 30px;
+  font-size: 20px;
+  color: #dbff00;
+  font-family: "Exo", sans-serif;
+}
+.title {
+  width: 1034px;
+  height: 120px;
+  color: #dbff00;
+  font-size: 60px;
+}
+.sub {
+  color: #dbff00;
+  font-family: "Exo", sans-serif;
+}
+p {
+  font-size: 24px;
+}
+span {
+  font-size: 64px;
+}
+
+button.subcribe {
+  width: 190px;
+  height: 55px;
+  background-color: #dbff00;
+  border-radius: 8px;
+  font-size: 15px;
+}
+/* about-section */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  gap: 40px;
+}
+.about-info {
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  margin-top: 330px;
+}
+.about-title {
+  font-size: 36px;
+  color: black;
+  font-weight: 900;
+  width: 640px;
+  text-align: right;
+}
+.about-text {
+  color: #666666;
+  font-size: 16px;
+  width: 640px;
+  text-align: end;
+}
+.about-img {
+  width: 298px;
+  height: 460px;
+}
+/* overview-container */
+.overview {
+  position: relative;
+}
+.overview-info {
+  position: absolute;
+  top: 230px;
+  width: 100vw;
+  height: 469px;
+  background-color: black;
+  display: flex;
+  font-style: italic;
+
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+}
+.overview-img {
+  width: 668px;
+  height: 1015px;
+}
+.overview-img img {
+  width: 668px;
+  height: 1015px;
+}
+.overview-card {
+  width: 295px;
+  height: 340px;
+  background-image: url(./images/Rectangle\ 1270.svg);
+  padding: 29px;
+}
+.overview-card > h1 {
+  font-size: 18px;
+  color: #dbff00;
+  text-align: right;
+}
+.overview-card > h4 {
+  font-size: 12px;
+  color: #ffffff;
+  margin-top: 40px;
+}
+.overview-card > p {
+  font-size: 12px;
+  color: #c4c4c4;
+  margin-top: 15px;
+}
+
+/* programe */
+.programe-container {
+  position: relative;
+}
+.programe-img {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.programe-info {
+  position: absolute;
+  top: 150px;
+  left: 420px;
+  width: 501px;
+  height: 310px;
+  background-color: black;
+  color: #ffffff;
+  text-align: center;
+  font-style: italic;
+}
+.programe-info > h1 {
+  font-size: 36px;
+  margin-bottom: 85px;
+  margin-top: 20px;
+}
+.programe-info > p {
+  font-size: 14px;
+  color: #c4c4c4;
+}
+.programe-cards {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  column-gap: 46px;
+  position: absolute;
+  top: 614px;
+}
+.programe-card {
+  width: 153px;
+  height: 136px;
+  background-color: rgba(0, 0, 0, 0.79);
+  text-align: center;
+}
+.programe-card > h3 {
+  color: #dbff00;
+  font-size: 14px;
+  margin: 15px 0 15px;
+}
+.programe-card > p {
+  color: #c4c4c4;
+  font-size: 12px;
+}
+/* photos */
+.photos {
+  margin-top: 100px;
+}
+.photos-container {
+  margin: auto;
+  width: 60%;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+.photos-title {
+  font-size: 36px;
+  font-style: italic;
+}
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 1s;
+}
+.buttons {
+  height: 40px;
+  width: 40px;
+  margin: auto;
+  display: flex;
+}
+.buttons img {
+  height: 40px;
+  width: 40px;
+}
+/* my blog */
+.my-blog {
+  background-color: #00000094;
+  margin-top: 30px;
+  height: 750px;
+}
+.my-blog-info {
+  height: 210px;
+  width: 405px;
+  text-align: right;
+  color: #ffffff;
+  margin-left: 62%;
+  margin-top: 30px;
+  padding-top: 30px;
+}
+.my-blog-info > h1 {
+  font-size: 36px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+.my-blog-info > p {
+  font-size: 14px;
+  font-style: italic;
+}
+.blogs-container {
+  display: flex;
+  margin-top: 65px;
+  justify-content: space-around;
+}
+.blog {
+  width: 296px;
+  height: 245px;
+}
+.img-container {
+  width: 296px;
+  height: 245px;
+  background-color: black;
+  padding: 10px;
+}
+.img-container img {
+  width: 276px;
+  height: 208px;
+}
+.img-container > h4 {
+  font-size: 12px;
+  color: #ffffff;
+}
+.blog > h3 {
+  font-size: 18px;
+  color: black;
+  font-style: italic;
+  margin: 10px 0 18px;
+}
+.blog > p {
+  font-size: 14px;
+  color: #ffffff;
+  font-style: italic;
+}
+.contact {
+  height: 436px;
+  background-color: black;
+}
+.contact-content {
+  display: flex;
+  justify-content: space-around;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 470px;
+  margin-top: 50px;
+}
+.contact-info {
+  margin-top: 50px;
+}
+.contact-info > h1 {
+  font-size: 36px;
+  font-style: italic;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+.contact-info > h3 {
+  font-size: 24px;
+  font-style: italic;
+  color: #dbff00;
+  margin-bottom: 20px;
+}
+.contact-info > h4 {
+  font-size: 14px;
+  font-style: italic;
+  color: #dbff00;
+}
+
+input {
+  color: #000000ba;
+  font-style: italic;
+  font-family: "Exo", sans-serif;
+  margin-bottom: 10px;
+}
+form :nth-child(3) {
+  height: 92px;
+}
+.contact-form button {
+  background-color: #dbff00;
+  color: black;
+  width: 153px;
+  height: 47px;
+  border-radius: 10px;
+}
+.contact-links {
+  height: 104px;
+  background-color: rgba(196, 196, 196, 0.16);
+  margin-top: 70px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.links-container {
+  width: 94px;
+  height: 34px;
+  margin-right: 80px;
+}
+.links-container a {
+  color: #dbff00;
+  margin-right: 20px;
+}
